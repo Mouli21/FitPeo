@@ -57,6 +57,8 @@ public class BaseClass2 {
     WebElement findElement2 = driver.findElement(By.id(":r0:"));
     
     driver.findElement(By.id(":r0:")).sendKeys("560");
+    
+    Thread.sleep(2000);
 
 	action.scrollByAmount(0, 500).perform();
 	}catch (ElementNotInteractableException e) {
@@ -79,8 +81,9 @@ public class BaseClass2 {
 		      			if (!selected) 
 		      			{
 							findElement3.click();
+							Thread.sleep(2000);
 						}
-	      
+	                     
 		      		    }
 	        	  
 	        	  String s2 = driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 inter css-1s3unkt'])[2]")).getText();
@@ -98,6 +101,7 @@ public class BaseClass2 {
 	        			      			if (!selected) 
 	        			      			{
 	        								findElement1.click();
+	        								Thread.sleep(2000);
 	        							}
 	        		      
 	        			      		    }
@@ -115,6 +119,7 @@ public class BaseClass2 {
 	        		        			      			if (!selected) 
 	        		        			      			{
 	        		        								findElement4.click();
+	        		        								Thread.sleep(2000);
 	        		        							}
 	        		        		      
 	        		        			      		    }
